@@ -1,9 +1,9 @@
-# 🎩 Fitora — AI Personal Stylist
+#  Fitora — AI Personal Stylist
 ## 100% FREE Stack | Zero Paid APIs | Ready to Run
 
 ---
 
-## 💰 Cost Breakdown
+##  Cost Breakdown
 
 | Component | Cost |
 |-----------|------|
@@ -18,10 +18,10 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-fitora-free/
+fitora/
 ├── backend/
 │   ├── src/
 │   │   ├── server.js               ← Entry point
@@ -53,7 +53,7 @@ fitora-free/
 
 ---
 
-## 🚀 SETUP (Step by Step)
+##  SETUP (Step by Step)
 
 ### Prerequisites
 - Node.js 18+
@@ -70,7 +70,7 @@ npm install
 npm run dev
 ```
 
-✅ Backend starts at `http://localhost:5000`
+ Backend starts at `http://localhost:5000`
 
 Test: `curl http://localhost:5000/health`
 
@@ -86,7 +86,7 @@ Test: `curl http://localhost:5000/health`
 }
 ```
 
-> **MongoDB is already configured** — uses your Atlas cluster at `fitora.ns77869.mongodb.net`
+> **MongoDB is already configured**
 
 ---
 
@@ -105,7 +105,7 @@ python train_model.py
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-✅ ML service starts at `http://localhost:8000`
+ML service starts at `http://localhost:8000`
 
 > **Note:** The ML service has a built-in fallback. If you skip training, it still classifies using shape/aspect ratio rules. Train it for 85-92% accuracy.
 
@@ -144,36 +144,9 @@ No installation needed — just get a free token:
 Used as backup when Ollama isn't running.
 
 ---
-
-### STEP 5 — Connect Your Frontend
-
-Copy `frontend-services-api.ts` to your Expo project as `services/api.ts`:
-
-```typescript
-import api from './services/api';
-
-// Register
-await api.auth.register('Alex', 'alex@example.com', 'password123');
-
-// Upload wardrobe item
-await api.wardrobe.upload(imageUri, { name: 'Blue Jeans', occasion: 'casual' });
-
-// Generate outfits
-const { outfits } = await api.outfit.generate({ occasion: 'work', mood: 'confident' });
-
-// Chat with AI stylist
-const { reply } = await api.chat.send('What should I wear today?');
-```
-const API_BASE = 'http://localhost:5000/api';
-**For physical device testing** — update `API_BASE` in `services/api.ts`:
-```typescript
-const API_BASE = 'http://YOUR_COMPUTER_IP:5000/api';
-// Find your IP: ipconfig (Windows) | ifconfig (Mac/Linux)
-```
-
 ---
 
-## 📋 API Reference
+##  API Reference
 
 ### Auth
 ```
@@ -214,7 +187,7 @@ GET  /api/shopping          → wardrobe gap analysis + links
 
 ---
 
-## 🧠 How the Free AI Stack Works
+##  How the Free AI Stack Works
 
 ```
 Every AI request goes through this chain:
@@ -235,7 +208,7 @@ The rule-based engine has:
 
 ---
 
-## 🤖 ML Model Details
+##  ML Model Details
 
 | Property | Value |
 |----------|-------|
@@ -285,7 +258,7 @@ curl -H "Authorization: Bearer $TOKEN" \
 
 ---
 
-## ⚠️ Troubleshooting
+##  Troubleshooting
 
 **Backend won't start:**
 ```bash
@@ -307,7 +280,7 @@ npm install   # Make sure dependencies are installed
 
 ---
 
-## 🚀 Deployment (Free)
+##  Deployment (Free)
 
 | Service | Platform | Cost |
 |---------|----------|------|
