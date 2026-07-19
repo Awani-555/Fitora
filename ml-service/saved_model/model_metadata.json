@@ -1,0 +1,34 @@
+{
+  "classes": [
+    "T-shirt",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "typeMap": {
+    "T-shirt": "top",
+    "Shirt": "top",
+    "Pullover": "top",
+    "Trouser": "bottom",
+    "Dress": "dress",
+    "Coat": "outerwear",
+    "Sandal": "footwear",
+    "Sneaker": "footwear",
+    "Ankle boot": "footwear",
+    "Bag": "accessory"
+  },
+  "accuracy": 0.9032999873161316,
+  "imgSize": [
+    96,
+    96
+  ],
+  "version": "2.0.0",
+  "framework": "TensorFlow 2.19.0",
+  "paidAPIs": "none"
+}
