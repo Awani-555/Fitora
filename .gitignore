@@ -1,0 +1,37 @@
+## Dependencies
+node_modules/
+
+## Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+## Backend uploads (runtime user data)
+backend/uploads/
+backend/.env
+
+## Python
+__pycache__/
+*.pyc
+
+## Expo
+frontend/.expo/
+# secrets
+backend/.env
+**/.env
+
+# dependencies
+**/node_modules/
+
+# expo
+frontend/.expo/
+
+# python
+ml-service/__pycache__/
+*.pyc
+
+# ml model (only exclude if large binary — check size first)
+# ml-service/saved_model/
+
+# logs
+*.log
